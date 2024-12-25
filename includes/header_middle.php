@@ -47,7 +47,6 @@ if (isset($_POST['remove_product'])) {
                     <li class="menu-item"><a href="index.php">Trang chủ</a></li>
                     <li class="menu-item"><a href="all_product.php">Tất cả sản phẩm</a></li>
                     <li class="menu-item"><a href="#">Giới thiệu về chúng tôi</a></li>
-                    <li class="menu-item"><a href="#">Chính sách bảo mật</a></li>
                     <?php 
                         if(isset($_SESSION['user_id'])){
                             ?>
