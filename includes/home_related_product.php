@@ -69,7 +69,7 @@
                                                 <b class="categories"><?php echo $eight_pdt_ctg_one['ctg_name'] ?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $eight_pdt['pdt_id'] ?>" class="pr-name"><?php echo $eight_pdt_ctg_one['pdt_name'] ?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">TK. </span><?php echo $eight_pdt_ctg_one['pdt_price'] ?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $eight_pdt_ctg_one['pdt_price'] ?></span> VNĐ</ins>
                                                     
                                                 </div>
                                                 <div class="slide-down-box">
@@ -101,7 +101,7 @@
                                                 <b class="categories"><?php echo $eight_pdt_ctg_two['ctg_name']?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $eight_pdt_ctg_two['pdt_id'] ?>" class="pr-name"><?php echo $eight_pdt_ctg_two['pdt_name']?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $eight_pdt_ctg_two['pdt_price']?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $eight_pdt_ctg_two['pdt_price']?></span> VNĐ</ins>
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
@@ -134,7 +134,7 @@
                                                 <b class="categories"><?php echo $eight_pdt_ctg_three['ctg_name']?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $eight_pdt_ctg_three['pdt_id'] ?>" class="pr-name"><?php echo $eight_pdt_ctg_three['pdt_name']?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $eight_pdt_ctg_three['pdt_price']?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $eight_pdt_ctg_three['pdt_price']?></span> VNĐ</ins>
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
@@ -166,7 +166,7 @@
                                                 <b class="categories"><?php echo $eight_pdt_ctg_four['ctg_name']?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $eight_pdt_ctg_four['pdt_id'] ?>" class="pr-name"><?php echo $eight_pdt_ctg_four['pdt_name']?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $eight_pdt_ctg_four['pdt_price']?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $eight_pdt_ctg_four['pdt_price']?></span> VNĐ</ins>
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
@@ -197,7 +197,7 @@
                                                 <b class="categories"><?php echo $eight_pdt_ctg_five['ctg_name']?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $eight_pdt_ctg_five['pdt_id'] ?>" class="pr-name"><?php echo $eight_pdt_ctg_five['pdt_name']?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $eight_pdt_ctg_five['pdt_price']?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $eight_pdt_ctg_five['pdt_price']?></span> VNĐ</ins>
                                                   
                                                 </div>
                                                 <div class="slide-down-box">

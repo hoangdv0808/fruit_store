@@ -31,7 +31,7 @@ while ($pdt_ftecth = mysqli_fetch_assoc($pdt_info)) {
                                     <div class="product-detail">
 
                                         <div class="price price-contain">
-                                            <ins><span class="price-amount"><span class="currencySymbol">TK. </span><?php echo $pdt_data['pdt_price'] ?></span></ins>
+                                            <ins><span class="price-amount"><span class="currencySymbol"></span><?php echo $pdt_data['pdt_price'] ?></span> VNĐ</ins>
 
                                            
                                         </div>

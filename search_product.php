@@ -92,7 +92,7 @@ include_once("includes/head.php");
                                                 <a href="single_product.php?status=singleproduct&&id=<?php echo $search_pdt['pdt_id'] ?>" class="pr-name"><?php echo $search_pdt['pdt_name'] ?></a>
                                             </h4>
                                             <div class="price">
-                                                <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $search_pdt['pdt_price'] ?></span></ins>
+                                                <ins><span class="price-amount"><span class="currencySymbol"></span><?php echo $search_pdt['pdt_price'] ?></span>VNĐ</ins>
                                             </div>
                                             <div class="shipping-info">
                                                 <p class="shipping-day">Vận chuyển trong 3 ngày</p>

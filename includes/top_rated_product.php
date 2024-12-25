@@ -25,7 +25,7 @@
                                                 <b class="categories"><?php echo $top_pdt['ctg_name']?></b>
                                                 <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $top_pdt['pdt_id'] ?>" class="pr-name"><?php echo $top_pdt['pdt_name']?></a></h4>
                                                 <div class="price ">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">TK. </span><?php echo $top_pdt['pdt_price']?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $top_pdt['pdt_price']?></span> VNĐ</ins>
                                                    
                                                 </div>
                                                 <div class="rating">

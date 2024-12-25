@@ -146,7 +146,7 @@ include_once("includes/head.php");
                             <div class="shpcart-subtotal-block">
                                 <div class="subtotal-line ">
                                     <b class="stt-name">Tổng cộng <span class="sub">(<?php echo  $total_product.' sản phẩm' ?>)</span></b>
-                                    <span class="stt-price">Tk. <?php echo $subtotal; ?></span>
+                                    <span class="stt-price"><?php echo $subtotal; ?> VNĐ</span>
                                 </div>
                                 <div class="btn-checkout">
                                     <a href="userprofile.php" class="btn checkout">Thanh toán</a>

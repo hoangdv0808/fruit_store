@@ -142,7 +142,7 @@ if (isset($_POST['remove_product'])) {
                                                             <div class="product-title"><a href="#" class="product-name"><?php echo $value['pdt_name'] ?> </a></div>
 
                                                             <div class="price">
-                                                                <ins><span class="price-amount"><span class="currencySymbol">TK. </span><?php echo $value['pdt_price'] ?></span></ins>
+                                                                <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $value['pdt_price'] ?></span> VNĐ</ins>
 
                                                             </div>
                                                             <!-- <div class="qty">

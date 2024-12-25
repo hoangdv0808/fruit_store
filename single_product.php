@@ -154,7 +154,7 @@ include_once("includes/head.php");
 
                                                 <p class="excerpt"><?php echo $pro_data['pdt_des'] ?></p>
                                                 <div class="price">
-                                                    <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $pro_data['pdt_price'] ?></span></ins>
+                                                    <ins><span class="price-amount"><span class="currencySymbol"> </span><?php echo $pro_data['pdt_price'] ?></span> VNĐ</ins>                                                              
                                                 </div>
 
                                                 <div class="shipping-info">
@@ -167,14 +167,11 @@ include_once("includes/head.php");
 
                                                 <div class="total-price-contain">
                                                     <span class="title">Tổng tiền:</span>
-                                                    <p class="price">Tk.
+                                                    <p class="price">
                                                         <?php
 
-                                                        echo $pro_data['pdt_price'];
-
-                                                        ?>
-
-
+                                                        echo $pro_data['pdt_price']; 
+                                                        ?>VNĐ
                                                     </p>
                                                 </div>
                                                 <div class="buttons">

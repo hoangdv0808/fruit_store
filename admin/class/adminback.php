@@ -309,45 +309,44 @@ class  adminback
         $pdt_img_size = $_FILES['u_pdt_img']['size'];
         $pdt_img_tmp = $_FILES['u_pdt_img']['tmp_name'];
         $img_ext = pathinfo($pdt_img_name, PATHINFO_EXTENSION);
+        $select_query = "SELECT * FROM `products` WHERE pdt_id=$pdt_id";
+        $result = mysqli_query($this->connection, $select_query);
+        $row = mysqli_fetch_assoc($result);
+        $pre_img = $row['pdt_img'];
 
-        list($width, $height) = getimagesize("$pdt_img_tmp");
+        if (!empty($pdt_img_tmp) && file_exists($pdt_img_tmp)) {
+            list($width, $height) = getimagesize($pdt_img_tmp);
 
-        if ($img_ext == "jpg" ||  $img_ext == 'jpeg' || $img_ext == "png") {
-            if ($pdt_img_size <= 2e+6) {
-               
-                if($width<271 && $height<271){
+            if (in_array(strtolower($img_ext), ["jpg", "jpeg", "png"])) {
+                if ($pdt_img_size <= 2e+6) {
+                    if ($width <= 271 && $height <= 271) {
+                        unlink("uploads/" . $pre_img);
+                        $query = "UPDATE `products` SET `pdt_name`='$pdt_name',`pdt_price`='$pdt_price',`pdt_des`='$pdt_des',`pdt_ctg`='$pdt_ctg',`pdt_img`='$pdt_img_name',`product_stock`=$pdt_stock,`pdt_status`=$pdt_status WHERE pdt_id=$pdt_id";
 
-                    $select_query = "SELECT * FROM `products` WHERE pdt_id=$pdt_id";
-                    $result = mysqli_query($this->connection, $select_query);
-                    $row = mysqli_fetch_assoc($result);
-                    $pre_img = $row['pdt_img'];
-                    unlink("uploads/".$pre_img);
-
-
-                    $query = "UPDATE `products` SET `pdt_name`=' $pdt_name',`pdt_price`='$pdt_price',`pdt_des`='$pdt_des',`pdt_ctg`='$pdt_ctg',`pdt_img`='$pdt_img_name',`product_stock`=$pdt_stock,`pdt_status`=$pdt_status WHERE pdt_id=$pdt_id";
-
-
-                    if (mysqli_query($this->connection, $query)) {
-
-                        move_uploaded_file($pdt_img_tmp, "uploads/".$pdt_img_name);
-                        $msg = "Product Updated successfully";
-                        return $msg;
+                        if (mysqli_query($this->connection, $query)) {
+                            move_uploaded_file($pdt_img_tmp, "uploads/" . $pdt_img_name);
+                            return "Product updated successfully!";
+                        }
+                    } else {
+                        return "Sorry! Image max dimensions are 271x271, but you provided {$width}x{$height}.";
                     }
-                }else{
-                    $msg = "Sorry !! Pdt image max height: 271 px and width: 271 px, but you are trying {$width} px and {$height} px";
-                    return $msg;
+                } else {
+                    return "File size should not exceed 2MB.";
                 }
-
-
             } else {
-                $msg = "File size should not be large 2MB";
-                return $msg;
+                return "File should be in JPG or PNG format.";
             }
         } else {
-            $msg = "File shoul be jpg or png formate";
-            return $msg;
+            $query = "UPDATE `products` SET `pdt_name`='$pdt_name',`pdt_price`='$pdt_price',`pdt_des`='$pdt_des',`pdt_ctg`='$pdt_ctg',`product_stock`=$pdt_stock,`pdt_status`=$pdt_status WHERE pdt_id=$pdt_id";
+
+            if (mysqli_query($this->connection, $query)) {
+                return "Product updated successfully without changing the image!";
+            }
         }
+
+        return "Failed to update product.";
     }
+
 
     function display_product_byCata($cataId)
     {
