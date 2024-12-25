@@ -19,9 +19,7 @@ if(isset($_SESSION['user_id'])){
         header('location:userprofile.php');
     }
 }
-
 ?>
-
 
 <?php
 include_once("includes/head.php");
@@ -29,7 +27,6 @@ include_once("includes/head.php");
 
 <body class="biolife-body">
     <!-- Preloader -->
-
 
     <!-- HEADER -->
     <header id="header" class="header-area style-01 layout-03">
@@ -48,16 +45,15 @@ include_once("includes/head.php");
 
     </header>
 
-    <!-- Page Contain -->
+    <!-- Nội dung trang -->
     <div class="page-contain">
 
-        <!-- Main content -->
+        <!-- Nội dung chính -->
         <div id="main-content" class="main-content">
-
 
             <div class="container">
 
-                <h2 class="text-center">Register as user</h2>
+                <h2 class="text-center">Đăng ký tài khoản người dùng</h2>
 
                 <h4>
                     <?php if (isset($reg_msg)) {
@@ -65,29 +61,26 @@ include_once("includes/head.php");
                         } ?>
              </h4>
 
-
                 <div class="row">
                     
 
-                    <!--Form Sign In-->
+                    <!-- Form đăng ký -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="signin-container">
                             <form action="" name="frm-register" method="POST">
 
-                      
                                 <p class="form-row">
-                                    <label for="username">Username:<span class="requite">*</span></label>
+                                    <label for="username">Tên người dùng:<span class="requite">*</span></label>
                                     <input type="text" name="username" class="txt-input form-control" required>
                                 </p>
 
                                 <p class="form-row">
-                                    <label for="user_firstname">First Name<span class="requite">*</span></label>
+                                    <label for="user_firstname">Tên<span class="requite">*</span></label>
                                     <input type="text" name="user_firstname" class="txt-input form-control" required>
                                 </p>
 
-
                                 <p class="form-row">
-                                    <label for="user_lastname">Last Name</label>
+                                    <label for="user_lastname">Họ</label>
                                     <input type="text" name="user_lastname" class="txt-input form-control">
                                 </p>
 
@@ -97,23 +90,23 @@ include_once("includes/head.php");
                                 </p>
 
                                 <p class="form-row">
-                                    <label for="user_password">Password <span class="requite">*</span> </label>
+                                    <label for="user_password">Mật khẩu <span class="requite">*</span> </label>
                                     <input type="password" id="fid-pass" name="user_password" class="form-control" required>
                                 </p>
 
                                 <p class="form-row">
-                                    <label for="user_mobile">Mobile <span class="requite">*</span> </label>
+                                    <label for="user_mobile">Số điện thoại <span class="requite">*</span> </label>
                                     <input type="tel" id="fid-pass" name="user_mobile"class="form-control" required>
                                 </p>
                                 <p class="form-row">
-                                    <label for="user_address">Address <span class="requite">*</span> </label>
+                                    <label for="user_address">Địa chỉ <span class="requite">*</span> </label>
                                     <textarea name="user_address" id="" cols="10" class="form-control"></textarea>
                                 </p>
 
                                 <input type="hidden" name="user_roles" value="5">
                                 <p class=" wrap-btn ">
 
-                                    <input type="submit" value="Sign Up" name="user_register_btn" class="btn btn-block btn-success">
+                                    <input type="submit" value="Đăng ký" name="user_register_btn" class="btn btn-block btn-success">
 
                                 </p>
 
@@ -121,20 +114,20 @@ include_once("includes/head.php");
                         </div>
                     </div>
 
-                    <!--Go to Register form-->
+                    <!-- Chuyển đến form đăng nhập -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="register-in-container">
                             <div class="intro">
-                                <h4 class="box-title">Already Registerd?</h4>
-                                <p class="sub-title">Log in to access your account</p>
+                                <h4 class="box-title">Đã đăng ký?</h4>
+                                <p class="sub-title">Đăng nhập để truy cập tài khoản của bạn</p>
                                 <ul class="lis">
-                                    <li>Check out faster</li>
-                                    <li>Save multiple shipping anddesses</li>
-                                    <li>Access your order history</li>
-                                    <li>Track new orders</li>
-                                    <li>Save items to your Wishlist</li>
+                                    <li>Mua sắm nhanh hơn</li>
+                                    <li>Lưu nhiều địa chỉ giao hàng</li>
+                                    <li>Truy cập lịch sử đơn hàng</li>
+                                    <li>Theo dõi đơn hàng mới</li>
+                                    <li>Lưu các sản phẩm vào danh sách yêu thích</li>
                                 </ul>
-                                <a href="user_login.php" class="btn btn-bold">Log in to your account</a>
+                                <a href="user_login.php" class="btn btn-bold">Đăng nhập vào tài khoản của bạn</a>
                             </div>
                         </div>
                     </div>
@@ -142,11 +135,6 @@ include_once("includes/head.php");
                 </div>
 
             </div>
-
-
-
-
-
 
         </div>
     </div>
@@ -157,7 +145,7 @@ include_once("includes/head.php");
     include_once("includes/footer.php");
     ?>
 
-    <!--Footer For Mobile-->
+    <!-- Footer cho di động -->
     <?php
     include_once("includes/mobile_footer.php");
     ?>
@@ -166,8 +154,7 @@ include_once("includes/head.php");
     include_once("includes/mobile_global.php")
     ?>
 
-
-    <!-- Scroll Top Button -->
+    <!-- Nút cuộn lên đầu trang -->
     <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
 
     <?php

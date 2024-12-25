@@ -25,7 +25,7 @@ $link = mysqli_fetch_assoc($links);
 
                 <div class="live-info">
                     <p class="telephone"><i class="fa fa-phone" aria-hidden="true"></i><b class="phone-number"> <?php echo $link['phone'] ?> </b></p>
-                    <p class="working-time">Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</p>
+                    <p class="working-time">Thứ Hai - Thứ Sáu: 8:30 sáng - 7:30 tối; Thứ Bảy - Chủ Nhật: 9:30 sáng - 4:30 chiều</p>
                 </div>
             </div>
         </div>

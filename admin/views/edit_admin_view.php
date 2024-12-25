@@ -13,7 +13,7 @@
 ?>
 
 <div class="container">
-    <h4>Edit Admin/Modarator Information</h4>
+    <h4>Chỉnh Sửa Thông Tin Quản Trị Viên/Moderator</h4>
 
     <h6>
         <?php 
@@ -24,7 +24,7 @@
     </h6>
 <form action="" method="POST">
     <div class="form-group">
-        <h4>User Email</h4>
+        <h4>Email Người Dùng.</h4>
         <input type="email" name="u-user-email" class="form-control" value="<?php echo $admin['admin_email'] ?>" required>
     </div>
 

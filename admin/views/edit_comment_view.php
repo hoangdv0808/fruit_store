@@ -28,12 +28,12 @@
 ?>
 </h5> <br> <br>
     
-        <h5>User Id: <?php echo $row['user_id'] ?> </h5> <br>
-        <h5>User Name: <?php echo $row['user_name'] ?> </h5> <br>
-        <h5>Product Id: <?php echo $row['pdt_id'] ?> </h5> <br>
+    <h5>Mã Người Dùng: <?php echo $row['user_id'] ?> </h5> <br>
+    <h5>Tên Người Dùng: <?php echo $row['user_name'] ?> </h5> <br>
+    <h5>Mã Sản Phẩm: <?php echo $row['pdt_id'] ?> </h5> <br>
 
-        <h5>Comment: </h5> <br>
-        
+    <h5>Bình Luận: </h5> <br>
+
    
 
     <div class="form-group">

@@ -4,12 +4,13 @@
     <table class="table" id="full_Table">
         <thead>
             <tr>
-                <th>Catagory</th>
-                <th>Products</th>
-                <th>Price (TK)</th>
-                <th>Quantity</th>
-                <th>Total (TK)</th>
-                <th>Action</th>
+            <th>Danh Mục</th>
+            <th>Sản Phẩm</th>
+            <th>Giá (TK)</th>
+            <th>Số Lượng</th>
+            <th>Tổng (TK)</th>
+            <th>Hành Động</th>
+
 
 
             </tr>

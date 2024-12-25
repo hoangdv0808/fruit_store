@@ -13,7 +13,7 @@ if (isset($_POST['update_slider_btn'])) {
 }
 ?>
 
-<h2>Edit Slider</h2>
+<h2>Chỉnh Sửa Slider.</h2>
 
 
 <h4>
@@ -27,43 +27,41 @@ if (isset($_POST['update_slider_btn'])) {
 <form action="" method="post" enctype="multipart/form-data">
 
 
-    <h4>Slider No: <?php echo $slide['slider_id'] ?></h4>
+    <h4>Số Slider.<?php echo $slide['slider_id'] ?></h4>
 
     <input type="hidden" value="<?php echo $slide['slider_id'] ?>" name="slider_id">
 
 
     <div class="form-group">
-        <label for="first_line">First Line</label>
-        <input type="text" name="first_line" class="form-control" value="<?php echo $slide['first_line'] ?>">
-    </div>
+    <label for="first_line">Dòng Đầu Tiên</label>
+    <input type="text" name="first_line" class="form-control" value="<?php echo $slide['first_line'] ?>">
+</div>
 
-    <div class="form-group">
-        <label for="second_line">Second Line</label>
-        <input type="text" name="second_line" class="form-control" value="<?php echo $slide['second_line'] ?>">
-    </div>
+<div class="form-group">
+    <label for="second_line">Dòng Thứ Hai</label>
+    <input type="text" name="second_line" class="form-control" value="<?php echo $slide['second_line'] ?>">
+</div>
 
-    <div class="form-group">
-        <label for="third_line">Third Line</label>
-        <input type="text" name="third_line" class="form-control" value="<?php echo $slide['third_line'] ?>">
-    </div>
+<div class="form-group">
+    <label for="third_line">Dòng Thứ Ba</label>
+    <input type="text" name="third_line" class="form-control" value="<?php echo $slide['third_line'] ?>">
+</div>
 
-    <div class="form-group">
-        <label for="btn_left">Left Button</label>
-        <input type="text" name="btn_left" class="form-control" value="<?php echo $slide['btn_left'] ?>">
-    </div>
+<div class="form-group">
+    <label for="btn_left">Nút Trái</label>
+    <input type="text" name="btn_left" class="form-control" value="<?php echo $slide['btn_left'] ?>">
+</div>
 
-    <div class="form-group">
-        <label for="btn_right">Right Button</label>
-        <input type="text" name="btn_right" class="form-control" value="<?php echo $slide['btn_right'] ?>">
-    </div>
+<div class="form-group">
+    <label for="btn_right">Nút Phải</label>
+    <input type="text" name="btn_right" class="form-control" value="<?php echo $slide['btn_right'] ?>">
+</div>
 
+<div class="form-group">
+    <label for="slider_img">Hình Ảnh Slider <span class="text-warning">(Hình ảnh Slider phải có chiều rộng: 1920px và chiều cao: 550px)</span></label>
+    <input type="file" name="slider_img" class="form-control" required>
+</div>
 
-    <div class="form-group">
-        <label for="slider_img">Slider Image <span class="text-warning">(Slider Image must be width:1920px and height: 550px )</span> </label>
-        <input type="file" name="slider_img" class="form-control" required>
-
-       
-    </div>
 
 
 

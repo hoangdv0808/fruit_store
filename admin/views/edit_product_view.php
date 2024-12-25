@@ -18,7 +18,7 @@ ini_set("display_erros", "Off");
 
 
 ?>
-<h4>Update Product</h4>
+<h4>Cập nhật sản phẩm</h4>
 
 <?php 
     if(isset($update_msg)){
@@ -26,44 +26,43 @@ ini_set("display_erros", "Off");
     }
 ?>
 <form action="" method="post" enctype="multipart/form-data" class="form">
-    <div class="form-group">
-        <label for="pdt_name">Product Name</label>
-        <input type="text" name="u_pdt_name" class="form-control" value="<?php echo $pdt['pdt_name'] ?>" >
-    </div>
+<div class="form-group">
+    <label for="pdt_name">Tên Sản Phẩm</label>
+    <input type="text" name="u_pdt_name" class="form-control" value="<?php echo $pdt['pdt_name'] ?>" >
+</div>
 
-    <input type="hidden" name="pdt_id" value="<?php echo $pdt['pdt_id'] ?>">
-    <div class="form-group">
-        <label for="pdt_price">Product Price</label>
-        <input type="text" name="u_pdt_price" class="form-control" value="<?php echo $pdt['pdt_price'] ?>">
-    </div>
+<input type="hidden" name="pdt_id" value="<?php echo $pdt['pdt_id'] ?>">
 
-    <div class="form-group">
-        <label for="pdt_des">Product Description</label>
-        <textarea name="u_pdt_des" cols="30" rows="10" class="form-control" ><?php echo $pdt['pdt_des']?> </textarea>
-    </div>
+<div class="form-group">
+    <label for="pdt_price">Giá Sản Phẩm</label>
+    <input type="text" name="u_pdt_price" class="form-control" value="<?php echo $pdt['pdt_price'] ?>">
+</div>
 
-    <div class="form-group">
-        <label for="pdt_stock">Product Stock</label>
-        <input type="number" name="pdt_stock" class="form-control" max='30' min='1' value="<?php echo $pdt['product_stock']?>">
-    </div>
+<div class="form-group">
+    <label for="pdt_des">Mô Tả Sản Phẩm</label>
+    <textarea name="u_pdt_des" cols="30" rows="10" class="form-control"><?php echo $pdt['pdt_des'] ?> </textarea>
+</div>
 
+<div class="form-group">
+    <label for="pdt_stock">Kho Sản Phẩm</label>
+    <input type="number" name="pdt_stock" class="form-control" max='30' min='1' value="<?php echo $pdt['product_stock']?>">
+</div>
 
-    <div class="form-group">
-        <label for="pdt_ctg">Product Catagories</label>
-        <select name="u_pdt_ctg" class="form-control">
-        <option value="">Select a Catagory</option>
-
+<div class="form-group">
+    <label for="pdt_ctg">Danh Mục Sản Phẩm</label>
+    <select name="u_pdt_ctg" class="form-control">
+        <option value="">Chọn Một Danh Mục</option>
         <?php while($cata = mysqli_fetch_assoc($cata_info)){ ?>
-        <option value="<?php echo $cata['ctg_id'] ?>"  ><?php echo $cata['ctg_name'] ?></option>
-
+            <option value="<?php echo $cata['ctg_id'] ?>" ><?php echo $cata['ctg_name'] ?></option>
         <?php }?>
-        </select>
-    </div>
+    </select>
+</div>
+
 
    
 
     <div class="form-group">
-        <label for="pdt_img">Product Image</label>
+        <label for="pdt_img">ảnh</label>
         <div class="mb-3">
         <img src="uploads/<?php echo $pdt['pdt_img']?>" style="width: 80px;" >
     </div>
@@ -73,8 +72,8 @@ ini_set("display_erros", "Off");
     <div class="form-group">
         <label for="pdt_status">Status</label>
         <select name="u_pdt_status" class="form-control">
-            <option value="1" <?php if($pdt['pdt_status']==1){ echo "selected";} ?> >Published</option>
-            <option value="0" <?php if($pdt['pdt_status']==0){echo "selected";} ?> >Unpublished</option>
+            <option value="1" <?php if($pdt['pdt_status']==1){ echo "selected";} ?> >Hoạt động </option>
+            <option value="0" <?php if($pdt['pdt_status']==0){echo "selected";} ?> >Không khoạt động</option>
         </select>
     </div>
 

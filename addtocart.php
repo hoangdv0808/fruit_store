@@ -16,7 +16,7 @@ if (isset($_POST['addtocart'])) {
         if (in_array($_POST['pdt_name'], $pdt_names)) {
             echo "
             <script>
-                alert('This Item Already added in Cart')
+                alert('Sản phẩm này đã có trong giỏ hàng')
             </script>
         ";
         } else {
@@ -50,14 +50,12 @@ if(isset($_POST['remove_product'])){
 }
 ?>
 
-
 <?php
 include_once("includes/head.php");
 ?>
 
 <body class="biolife-body">
     <!-- Preloader -->
-<!--  -->
 
     <!-- HEADER -->
     <header id="header" class="header-area style-01 layout-03">
@@ -83,28 +81,27 @@ include_once("includes/head.php");
         <div id="main-content" class="main-content">
 
             <br>
-            <!-- Product -->
+            <!-- Sản phẩm -->
             <div class="container ">
 
-                <!--Cart Table-->
+                <!-- Bảng Giỏ hàng -->
                 <div class="shopping-cart-container">
                     <div class="row">
                         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                            <h3 class="box-title">Your cart items</h3>
+                            <h3 class="box-title">Các sản phẩm trong giỏ hàng của bạn</h3>
                             <form class="shopping-cart-form" action="#" method="post">
                                 <table class="shop_table cart-form">
                                     <thead>
                                         <tr>
-                                            <th class="product-name">Product Name</th>
-                                            <th class="product-price">Price (Tk)</th>
-                                            <th class="product-quantity">Remove</th>
-                                            <!-- <th class="product-subtotal">Total (TK)</th> -->
+                                            <th class="product-name">Tên sản phẩm</th>
+                                            <th class="product-price">Giá (Tk)</th>
+                                            <th class="product-quantity">Xóa</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                     <?php if(isset($_SESSION['cart'])){
-                                        
+                                      
                                         $subtotal=0;
                                         $total_product = 0;
                                         foreach($_SESSION['cart'] as $key=> $value){ 
@@ -112,36 +109,32 @@ include_once("includes/head.php");
                                             $total_product++;
                                             ?>
                                         <tr class="cart_item">
-                                            <td class="product-thumbnail" data-title="Product Name">
+                                            <td class="product-thumbnail" data-title="Tên sản phẩm">
                                                 <a class="prd-thumb" href="single_product.php?status=singleproduct&&id=<?php echo $value['pdt_id'] ?>">
-                                                    <figure><img width="113" height="113" src="admin/uploads/<?php echo $value['pdt_img'] ?>" alt="shipping cart"></figure>
+                                                    <figure><img width="113" height="113" src="admin/uploads/<?php echo $value['pdt_img'] ?>" alt="giỏ hàng"></figure>
                                                 </a>
                                                 <a class="prd-name" href="single_product.php?status=singleproduct&&id=<?php echo $value['pdt_id'] ?>"><?php echo $value['pdt_name'] ?></a>
                                             
+
                                             </td>
-                                            <td class="product-price" data-title="Price">
+                                            <td class="product-price" data-title="Giá">
                                                 <div class="price price-contain">
                                                     <ins><span class="price-amount"><span class="currencySymbol"></span><?php echo $value['pdt_price'] ?></span></ins>
                                                     
+
                                                 </div>
                                             </td>
-                                            <td class="product-quantity" data-title="Quantity">
+                                            <td class="product-quantity" data-title="Số lượng">
                                                 <form action="" method="POST">
 
                                                 <input type="hidden" value="<?php echo $value['pdt_name'] ?>" name="remove_pdt_name">
-                                                    <input class="btn btn-warning" type="submit" value="Remove Product" name="remove_product">
+                                                    <input class="btn btn-warning" type="submit" value="Xóa sản phẩm" name="remove_product">
                                                 </form>
                                             </td>
-                                            <!-- <td class="product-subtotal" data-title="Total">
-                                                <div class="price price-contain">
-                                                    <ins><span class="price-amount"><span class="currencySymbol"></span><?php echo $value['pdt_price'] ?></span></ins>
-                                                   
-                                                </div>
-                                            </td> -->
                                         </tr>
 
                                         <?php }}else{
-                                            echo "Your cart is empty";
+                                            echo "Giỏ hàng của bạn hiện đang trống";
                                         }?>
 
                                      
@@ -152,30 +145,18 @@ include_once("includes/head.php");
                         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                             <div class="shpcart-subtotal-block">
                                 <div class="subtotal-line ">
-                                    <b class="stt-name">Subtotal <span class="sub">(<?php echo  $total_product.'Items' ?>)</span></b>
+                                    <b class="stt-name">Tổng cộng <span class="sub">(<?php echo  $total_product.' sản phẩm' ?>)</span></b>
                                     <span class="stt-price">Tk. <?php echo $subtotal; ?></span>
                                 </div>
-                                <!-- <div class="subtotal-line">
-                                    <b class="stt-name">Shipping</b>
-                                    <span class="stt-price">Tk. 0.00</span>
-                                </div>
-                                <div class="tax-fee">
-                                    <p class="title">Est. Taxes & Fees</p>
-                                    <p class="desc">Based on 56789</p>
-                                </div> -->
                                 <div class="btn-checkout">
-                                    <a href="userprofile.php" class="btn checkout">Check out</a>
+                                    <a href="userprofile.php" class="btn checkout">Thanh toán</a>
                                 </div>
                               
-                                <p class="pickup-info"><b>Free Pickup</b> is available as soon as today More about shipping and pickup</p>
+                                <p class="pickup-info"><b>Nhận hàng miễn phí</b> có sẵn ngay hôm nay. Thêm thông tin về giao hàng và nhận hàng</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
             </div>
 
@@ -189,7 +170,7 @@ include_once("includes/head.php");
     include_once("includes/footer.php");
     ?>
 
-    <!--Footer For Mobile-->
+    <!-- Footer cho di động -->
     <?php
     include_once("includes/mobile_footer.php");
     ?>
@@ -198,8 +179,7 @@ include_once("includes/head.php");
     include_once("includes/mobile_global.php")
     ?>
 
-
-    <!-- Scroll Top Button -->
+    <!-- Nút cuộn lên -->
     <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
 
     <?php

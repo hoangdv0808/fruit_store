@@ -26,8 +26,9 @@
 <div class="product-tab z-index-20 sm-margin-top-193px xs-margin-top-30px">
                 <div class="container">
                     <div class="biolife-title-box">
-                        <span class="subtitle">All the best item for You</span>
-                        <h3 class="main-title">Related Products</h3>
+                    <span class="subtitle">Tất cả các sản phẩm tốt nhất cho bạn</span>
+                        <h3 class="main-title">Sản phẩm liên quan</h3>
+
                     </div>
                     <div class="biolife-tab biolife-tab-contain sm-margin-top-34px">
                         <div class="tab-head tab-head__icon-top-layout icon-top-layout">
@@ -72,7 +73,8 @@
                                                     
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                   <p class="message">Tất cả sản phẩm đều được chọn lọc kỹ càng để đảm bảo an toàn thực phẩm.</p>
+
                                                    
                                                 </div>
                                             </div>
@@ -103,7 +105,8 @@
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                   <p class="message">Tất cả sản phẩm đều được chọn lọc kỹ càng để đảm bảo an toàn thực phẩm.</p>
+
                                                   
                                                 </div>
                                             </div>
@@ -135,7 +138,8 @@
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                   <p class="message">Tất cả sản phẩm đều được chọn lọc kỹ càng để đảm bảo an toàn thực phẩm.</p>
+
                                                   
                                                 </div>
                                             </div>
@@ -166,7 +170,8 @@
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                   <p class="message">Tất cả sản phẩm đều được chọn lọc kỹ càng để đảm bảo an toàn thực phẩm.</p>
+
                                                   
                                                 </div>
                                             </div>
@@ -196,7 +201,8 @@
                                                   
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                   <p class="message">Tất cả sản phẩm đều được chọn lọc kỹ càng để đảm bảo an toàn thực phẩm.</p>
+
                                                   
                                                 </div>
                                             </div>

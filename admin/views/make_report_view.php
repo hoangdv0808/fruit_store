@@ -32,11 +32,11 @@ date_default_timezone_set("Asia/Dhaka");
         </a>
 
     </div>
-    <h4 class="text-center">Sales Report</h4>
-    <p class="text-center">From <span id="from" class="font-weight-bold"></span> T0 <span id="to" class="font-weight-bold"> <?php $mydate=getdate(date("U"));
+    <h4 class="text-center">Báo cáo doanh thu.</h4>
+    <p class="text-center">Từ <span id="from" class="font-weight-bold"></span> Đến <span id="to" class="font-weight-bold"> <?php $mydate=getdate(date("U"));
 echo "$mydate[year]-$mydate[mon]-$mydate[mday]"; ?> </span></p>
 
-<p class="text-center">Email: <?php echo $link['email'] ?>, Phone: <?php echo $link['phone'] ?> </p>
+<p class="text-center">Email: <?php echo $link['email'] ?>, SĐT: <?php echo $link['phone'] ?> </p>
 
 </div>
 
@@ -51,11 +51,12 @@ echo "$mydate[year]-$mydate[mon]-$mydate[mday]"; ?> </span></p>
 <div class="mydiv">
     <form action="" class="form">
         <select name="filterDate" id="filterDate" class="form-control">
-            <option value="<?php echo date("Y-m-d") ?>">Today</option>
-            <option value="<?php echo date('Y-m-d', strtotime('-7 days')) ?>">This week</option>
-            <option value="<?php echo date('Y-m-d', strtotime('-30 days')) ?>">This Month</option>
-            <option value="<?php echo date('Y-m-d', strtotime('-365 days')) ?>">This Year</option>
-            <option value="2020-01-01">Life Time</option>
+            <option value="<?php echo date("Y-m-d") ?>">Hôm nay</option>
+            <option value="<?php echo date('Y-m-d', strtotime('-7 days')) ?>">Tuần này</option>
+            <option value="<?php echo date('Y-m-d', strtotime('-30 days')) ?>">Tháng này</option>
+            <option value="<?php echo date('Y-m-d', strtotime('-365 days')) ?>">Năm nay</option>
+
+            <option value="2020-01-01">Trọn đời.</option>
         </select>
     </form>
 </div>
@@ -64,14 +65,13 @@ echo "$mydate[year]-$mydate[mon]-$mydate[mday]"; ?> </span></p>
     <table class="table table-bordered">
         <thead>
             <tr class="bg-secondary">
-                <th>
-                    Total Place Order
-                </th>
-                <th>Total Amount</th>
-                <th>Pending Order</th>
-                <th>Processing Order</th>
-                <th>Deliverd Order</th>
-                <th>Total Customer</th>
+            <th>Tổng Đơn Hàng Đã Đặt</th>
+            <th>Tổng Số Tiền</th>
+            <th>Đơn Hàng Đang Chờ</th>
+            <th>Đơn Hàng Đang Xử Lý</th>
+            <th>Đơn Hàng Đã Giao</th>
+            <th>Tổng Số Khách Hàng</th>
+
             </tr>
         </thead>
         <tbody>
@@ -91,16 +91,16 @@ echo "$mydate[year]-$mydate[mon]-$mydate[mday]"; ?> </span></p>
 <br>
 
 <div>
-    <h5>Sells By Products</h5> <br>
+    <h5>Bán hàng theo sản phẩm.</h5> <br>
     <table class="table table-bordered table-striped">
         <thead>
-            <tr class="bg-secondary">
-                <th>Product Id</th>
-                <th>Product Name</th>
-                <th>Quantity</th>
-                <th>Amount</th>
+        <tr class="bg-secondary">
+            <th>Mã Sản Phẩm</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Số Lượng</th>
+            <th>Số Tiền</th>
+        </tr>
 
-            </tr>
         </thead>
 
         <tbody id="sell_by_pdt">
@@ -116,16 +116,15 @@ echo "$mydate[year]-$mydate[mon]-$mydate[mday]"; ?> </span></p>
 
 <br><br>
 <div>
-    <h5>Sells By Customer</h5> <br>
+    <h5>Bán Theo Khách Hàng</h5> <br>
     <table class="table table-bordered table-striped">
         <thead>
-            <tr class="bg-secondary">
-                <th>Customer</th>
-                <th>Total Order</th>
-                <th>Amount</th>
+        <tr class="bg-secondary">
+            <th>Khách Hàng</th>
+            <th>Tổng Đơn Hàng</th>
+            <th>Số Tiền</th>
+        </tr>
 
-
-            </tr>
         </thead>
 
         <tbody id="sell_by_customer">

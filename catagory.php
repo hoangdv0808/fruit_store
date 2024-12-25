@@ -2,12 +2,14 @@
 include_once("admin/class/adminback.php");
 $obj = new adminback();
 
+// Lấy thông tin danh mục sản phẩm
 $cata_info = $obj->p_display_catagory();
 $cataDatas = array();
 while ($data = mysqli_fetch_assoc($cata_info)) {
     $cataDatas[] = $data;
 }
 
+// Kiểm tra trạng thái và lấy sản phẩm theo danh mục
 if (isset($_GET['status'])) {
     $cataId = $_GET['id'];
     if ($_GET['status'] == 'catView') {
@@ -17,24 +19,17 @@ if (isset($_GET['status'])) {
         while($pdt_ftecth = mysqli_fetch_assoc($pdt_info)){
             $pdt_datas[] = $pdt_ftecth;
         }
-       
     }
 }
 
+// Lấy thông tin danh mục theo ID
 if (isset($_GET['status'])) {
     $cataId = $_GET['id'];
     if ($_GET['status'] == 'catView') {
         $ctg_info = $obj->ctg_by_id($cataId);
-        
-        
-       
     }
 }
-
-
-
 ?>
-
 
 <?php
 include_once("includes/head.php");
@@ -43,11 +38,8 @@ include_once("includes/head.php");
 <body class="biolife-body">
     <!-- Preloader -->
 
-
-
     <!-- HEADER -->
     <header id="header" class="header-area style-01 layout-03">
-
         <?php
         include_once("includes/header_top.php");
         ?>
@@ -62,47 +54,38 @@ include_once("includes/head.php");
 
     </header>
 
-    <!-- Page Contain -->
+    <!-- Nội dung trang -->
     <div class="page-contain">
-
-        <!-- Main content -->
+        <!-- Nội dung chính -->
         <div id="main-content" class="main-content">
-
-            <!--Hero Section-->
+            <!-- Phần Hero -->
             <div class="hero-section hero-background">
                 <h1 class="page-title">
                     <?php
-                   echo $ctg_info['ctg_name'];
+                   echo $ctg_info['ctg_name'];  // Hiển thị tên danh mục
                     ?>
                 </h1>
             </div>
 
-
-            <!--Navigation section-->
+            <!-- Phần điều hướng -->
             <div class="container">
                 <nav class="biolife-nav">
                     <ul>
-                        <li class="nav-item"><a href="index.php" class="permal-link">Home</a></li>
-
+                        <li class="nav-item"><a href="index.php" class="permal-link">Trang chủ</a></li>
                         <li class="nav-item"><span class="current-page">
-
-                        <?php
-                   echo $ctg_info['ctg_name'];
-                    ?>
+                            <?php
+                               echo $ctg_info['ctg_name'];  // Hiển thị tên danh mục
+                            ?>
                             </span></li>
                     </ul>
                 </nav>
             </div>
 
-
-            <!-- Product -->
+            <!-- Sản phẩm -->
             <div class="container">
-
                 <div class="product-category grid-style">
-
                     <div class="row">
                         <ul class="products-list">
-
                             <?php
                             foreach ($pdt_datas as $pdt_data) {
                             ?>
@@ -119,15 +102,13 @@ include_once("includes/head.php");
                                             <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $pdt_data['pdt_id'] ?>" class="pr-name"><?php echo $pdt_data['pdt_name'] ?></a></h4>
                                             <div class="price">
                                                 <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $pdt_data['pdt_price'] ?></span></ins>
-
                                             </div>
                                             <div class="shipping-info">
-                                                <p class="shipping-day">3-Day Shipping</p>
-                                                <p class="for-today">Pree Pickup Today</p>
+                                                <p class="shipping-day">Giao hàng trong 3 ngày</p>
+                                                <p class="for-today">Nhận hàng trong ngày</p>
                                             </div>
                                             <div class="slide-down-box">
-                                                <p class="message">All products are carefully selected to ensure food safety.</p>
-                                               
+                                                <p class="message">Tất cả các sản phẩm đều được chọn lọc cẩn thận để đảm bảo an toàn thực phẩm.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -135,12 +116,10 @@ include_once("includes/head.php");
 
                             <?php } ?>
 
-
                         </ul>
                     </div>
 
-                    <!-- Pagination block -->
-
+                    <!-- Phần phân trang -->
                     <div class="biolife-panigations-block">
                         <ul class="panigation-contain">
                             <li><span class="current-page">1</span></li>
@@ -153,36 +132,29 @@ include_once("includes/head.php");
                     </div>
 
                 </div>
-
-
-
-
-
             </div>
         </div>
     </div>
 
     <!-- FOOTER -->
-
     <?php
     include_once("includes/footer.php");
     ?>
 
-    <!--Footer For Mobile-->
+    <!-- Footer cho di động -->
     <?php
     include_once("includes/mobile_footer.php");
     ?>
 
     <?php
-    include_once("includes/mobile_global.php")
+    include_once("includes/mobile_global.php");
     ?>
 
-
-    <!-- Scroll Top Button -->
+    <!-- Nút cuộn lên đầu trang -->
     <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
 
     <?php
-    include_once("includes/script.php")
+    include_once("includes/script.php");
     ?>
 </body>
 

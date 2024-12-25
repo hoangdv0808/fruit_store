@@ -21,17 +21,17 @@
 </h6>
 <form action="" method="POST">
     <div class="form-group">
-        <h4>User Email</h4>
+        <h4>Email</h4>
         <input type="email" name="user_name" class="form-control" required>
     </div>
 
     <div class="form-group">
-        <h4>Password</h4>
+        <h4>mật khẩu</h4>
         <input type="password" name="user_password" class="form-control" required>
     </div>
 
     <div class="form-group">
-        <h4>Role</h4>
+        <h4>Vai trò</h4>
        <select name="user_role" class="form-control">
            <option disabled selected>--Select--</option>
            <option value="1">Admin</option>

@@ -54,10 +54,10 @@ CREATE TABLE `admin_info` (
 
 --
 -- Dumping data for table `admin_info`
---21232f297a57a5a743894a0e4a801fc3
+--
 
 INSERT INTO `admin_info` (`admin_id`, `admin_email`, `admin_pass`, `role`) VALUES
-(1, 'admin@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 1),
+(1, 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1),
 
 -- --------------------------------------------------------
 

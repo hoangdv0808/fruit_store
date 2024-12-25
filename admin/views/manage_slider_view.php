@@ -3,19 +3,20 @@
         
 ?>
 
-<h2>Manage Slider</h2>
+<h2>quản lý trình chiếu</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Slider Id</th>
-            <th>First line</th>
-            <th>Second Line</th>
-            <th>Third Line</th>
-            <th>Button Left</th>
-            <th>Button Right</th>
-            <th>Slide Image</th>
-            <th>Action</th>
+        <th>ID Slide</th>
+        <th>Dòng đầu tiên</th>
+        <th>Dòng thứ hai</th>
+        <th>Dòng thứ ba</th>
+        <th>Nút bên trái</th>
+        <th>Nút bên phải</th>
+        <th>Ảnh slide</th>
+        <th>Hành động</th>
+
         </tr>
     </thead>
 
@@ -43,7 +44,7 @@
             <td> <img src="uploads/<?php echo $row['slider_img'] ?>" width="200px"> </td>
 
             <td>
-                <a href="edit_slider.php?status=edit&&id=<?php echo $row['slider_id'] ?>">Edit</a>
+                <a href="edit_slider.php?status=edit&&id=<?php echo $row['slider_id'] ?>">sửa</a>
             </td>
         </tr>
 

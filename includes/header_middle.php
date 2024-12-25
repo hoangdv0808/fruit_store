@@ -43,25 +43,20 @@ if (isset($_POST['remove_product'])) {
             </div>
             <div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
                 <div class="primary-menu">
-                    <ul class="menu biolife-menu clone-main-menu clone-primary-menu" id="primary-menu" data-menuname="main menu">
+                <ul class="menu biolife-menu clone-main-menu clone-primary-menu" id="primary-menu" data-menuname="main menu">
+                    <li class="menu-item"><a href="index.php">Trang chủ</a></li>
+                    <li class="menu-item"><a href="all_product.php">Tất cả sản phẩm</a></li>
+                    <li class="menu-item"><a href="#">Giới thiệu về chúng tôi</a></li>
+                    <li class="menu-item"><a href="#">Chính sách bảo mật</a></li>
+                    <?php 
+                        if(isset($_SESSION['user_id'])){
+                            ?>
+                            <li class="menu-item"><a href="exist_order.php">Bảng điều khiển</a></li>
+                            <?php
+                        }
+                    ?>
+                </ul>
 
-
-
-                        <li class="menu-item"><a href="index.php">Home</a></li>
-                        <li class="menu-item"><a href="all_product.php">All Product</a></li>
-                        <li class="menu-item"><a href="#">About Us</a></li>
-                       
-                        <li class="menu-item"><a href="#">Privacy Policy </a></li>
-                        <?php 
-                            if(isset($_SESSION['user_id'])){
-                                 ?>
-                                  <li class="menu-item"><a href="exist_order.php">Dashboard </a></li>
-                                 <?php
-                            }
-                        ?>
-
-
-                    </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-md-6 col-xs-6">
@@ -71,20 +66,21 @@ if (isset($_POST['remove_product'])) {
                         <div class="mobile-search-content">
                             <form action="#" class="form-search" name="mobile-seacrh" method="get">
                                 <a href="#" class="btn-close"><span class="biolife-icon icon-close-menu"></span></a>
-                                <input type="text" name="s" class="input-text" value="" placeholder="Search here...">
+                                <input type="text" name="s" class="input-text" value="" placeholder="Tìm kiếm ở đây..."                                >
                                 <select name="category">
-                                    <option value="-1" selected>All Categories</option>
-                                    <option value="vegetables">Vegetables</option>
-                                    <option value="fresh_berries">Fresh Berries</option>
-                                    <option value="ocean_foods">Ocean Foods</option>
-                                    <option value="butter_eggs">Butter & Eggs</option>
-                                    <option value="fastfood">Fastfood</option>
-                                    <option value="fresh_meat">Fresh Meat</option>
-                                    <option value="fresh_onion">Fresh Onion</option>
-                                    <option value="papaya_crisps">Papaya & Crisps</option>
-                                    <option value="oatmeal">Oatmeal</option>
+                                    <option value="-1" selected>Tất cả các danh mục</option>
+                                    <option value="vegetables">Rau củ</option>
+                                    <option value="fresh_berries">Quả mọng tươi</option>
+                                    <option value="ocean_foods">Thực phẩm từ biển</option>
+                                    <option value="butter_eggs">Bơ & Trứng</option>
+                                    <option value="fastfood">Thức ăn nhanh</option>
+                                    <option value="fresh_meat">Thịt tươi</option>
+                                    <option value="fresh_onion">Hành tươi</option>
+                                    <option value="papaya_crisps">Mứt & Khoai tây chiên</option>
+                                    <option value="oatmeal">Bột yến mạch</option>
                                 </select>
-                                <button type="submit" class="btn-submit">go</button>
+                                <button type="submit" class="btn-submit">Đi</button>
+
                             </form>
                         </div>
                     </div>
@@ -111,7 +107,7 @@ if (isset($_POST['remove_product'])) {
                                         ?>
                                     </span>
                                 </span>
-                                <span class="title">My Cart :</span>
+                                <span class="title">Giỏ hàng của tôi :</span>
 
 
                                 <span class="sub-total">
@@ -177,7 +173,8 @@ if (isset($_POST['remove_product'])) {
 
                                     </ul>
                                     <p class="btn-control">
-                                        <a href="userprofile.php" class="btn view-cart ">Check Out</a>
+                                        <a href="userprofile.php" class="btn view-cart ">Thanh toán</a>
+
 
                                     </p>
                                 </div>

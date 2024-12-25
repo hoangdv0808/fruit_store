@@ -13,7 +13,7 @@
 ?>
 
 
-<h2>Update Catagory</h2>
+<h2>Cập nhật danh mục</h2>
 
 <h6 class="">
     <?php if(isset($up_msg)){ echo $up_msg;} ?>
@@ -24,20 +24,20 @@
 
 
     <div class="form-group">
-        <label for="u_ctg_name">Catagory Name</label>
+        <label for="u_ctg_name">Tên</label>
         <input type="text" name="u_ctg_name" class="form-control" value="<?php echo $cata['ctg_name'] ?>">
     </div>
 
     <div class="form-group">
-        <label for="u_ctg_des">Catagory descriptioon</label>
+        <label for="u_ctg_des">Mô tả</label>
         <input type="text" name="u_ctg_des" class="form-control"  value="<?php echo $cata['ctg_des'] ?>">
     </div>
 
     <div class="form-group">
-        <label for="u_ctg_status">Catagory Name</label>
+        <label for="u_ctg_status">Tên</label>
         <select name="u_ctg_status" class="form-control">
-            <option value="1">Published</option>
-            <option value="0">Unpublished</option>
+            <option value="1">hoạt động</option>
+            <option value="0">không hoạt động</option>
         </select>
     </div>
 

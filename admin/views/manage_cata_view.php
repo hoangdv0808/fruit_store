@@ -23,11 +23,12 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Catagory Name</th>
-                <th>Catagory Descriptiong</th>
-                <th>Status</th>
-                <th>Action</th>
+            <th>ID</th>
+<th>Tên Danh Mục</th>
+<th>Mô Tả Danh Mục</th>
+<th>Trạng Thái</th>
+<th>Hành Động</th>
+
             </tr>
         </thead>
 
@@ -49,7 +50,7 @@
                     else{echo "Published";
                     
                     ?>
-                     <a href="?status=unpublished&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-warning">Make Unpublished</a>
+                     <a href="?status=unpublished&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-warning">Đăng công khai</a>
                         <?php 
                     }  
                     
@@ -57,8 +58,8 @@
                 
                 </td>
                 <td>
-                    <a href="edit_cata.php?status=edit&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                    <a href="?status=delete&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-danger">Delete</a>
+                    <a href="edit_cata.php?status=edit&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-warning">sửa</a>
+                    <a href="?status=delete&&id=<?php echo $ctg['ctg_id'] ?>" class="btn btn-sm btn-danger">xóa</a>
                 </td>
                
             </tr>

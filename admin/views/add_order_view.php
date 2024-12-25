@@ -10,18 +10,18 @@
     ?>
 
 
- <h2>Add order</h2>
+ <h2>Thêm Đơn Hàng.</h2>
 
  <form action="" method="post">
      <div class="table-responsive">
          <table class="table table-bordered" name="item-table">
              <thead>
                  <tr>
-                     <th>Catagory</th>
-                     <th>Products</th>
-                     <th>Price (TK)</th>
-                     <th>Quantity</th>
-                     <th>Total (TK)</th>
+                    <th>Danh Mục</th>
+                    <th>Sản Phẩm</th>
+                    <th>Giá (TK)</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng (TK)</th>
                      <th> <button type="button" name="add" class="btn btn-success btn-sm add"> add </button> </th>
 
 

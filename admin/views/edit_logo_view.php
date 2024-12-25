@@ -12,7 +12,7 @@
 ?>
 
 
-<h2>Update Logo</h2>
+<h2>Cập nhật logo</h2>
 
 <h6 class="">
     <?php if(isset($up_msg)){ echo $up_msg;} ?>
@@ -23,7 +23,7 @@
 
 
     <div class="form-group">
-        <label for="img">Image</label>
+        <label for="img">ảnh</label>
         <input type="file" name="img" class="form-control">
        
     <input type="hidden" name="id" value="<?php echo $logo['id'] ?>" >

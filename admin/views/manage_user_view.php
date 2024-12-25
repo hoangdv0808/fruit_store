@@ -11,7 +11,7 @@
 ?>
 
 <div class="container">
-    <h2>Manage user</h2>
+    <h2>Quản lý người dùng</h2>
 
     <h4 class="text-success">
         <?php 
@@ -26,10 +26,11 @@
 
        
             <tr>
-                <th>User Id</th>
-                <th>User Email</th>
-                <th>User Role</th>
-                <th>Action</th>
+            <th>ID người dùng</th>
+            <th>Email người dùng</th>
+            <th>Vai trò người dùng</th>
+            <th>Hành động</th>
+
             </tr>
         </thead>
 
@@ -48,8 +49,8 @@
                 } ?> </td>
             
                 <td>  
-                    <a href="edit_admin.php?status=userEdit&&id=<?php echo $user['admin_id'] ?>" class="btn btn-sm btn-warning">Edit </a>
-                    <a href="?status=delete&&id=<?php echo $user['admin_id'] ?>" class="btn btn-sm btn-danger">Delete</a>
+                    <a href="edit_admin.php?status=userEdit&&id=<?php echo $user['admin_id'] ?>" class="btn btn-sm btn-warning">Sửa </a>
+                    <a href="?status=delete&&id=<?php echo $user['admin_id'] ?>" class="btn btn-sm btn-danger">xóa</a>
 
                 </td>
             </tr>

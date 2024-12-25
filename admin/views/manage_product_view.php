@@ -16,19 +16,18 @@
     }
    }
 ?>
-<h2>Manage Product </h2> 
+<h2>Quản lý sản phẩm</h2> 
 <br>
 
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Product Name</th>
-            <th>Product Price</th>
-         
-            <th>Product Image</th>
-            <th>Product Status</th>
-            <th>Product Catagory</th>
-            <th>Action</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá sản phẩm</th>
+        <th>Ảnh sản phẩm</th>
+        <th>Trạng thái sản phẩm</th>
+        <th>Danh mục sản phẩm</th>
+        <th>Hành động</th>
         </tr>
     </thead>
 
@@ -51,20 +50,20 @@
                         echo "Unpublished";
                         
                         ?>
-                        <a href="?prostatus=published&&id=<?php echo $pdt['pdt_id']?>"  class="btn btn-sm btn-primary" >Published</a>
+                        <a href="?prostatus=published&&id=<?php echo $pdt['pdt_id']?>"  class="btn btn-sm btn-primary" >đang hoạt động</a>
                     <?php
                     }else{
                         echo "Published";
                        
                          ?>
-                            <a href="?prostatus=unpublished&&id=<?php echo $pdt['pdt_id'] ?>" class="btn btn-sm btn-warning">unpublished</a>
+                            <a href="?prostatus=unpublished&&id=<?php echo $pdt['pdt_id'] ?>" class="btn btn-sm btn-warning">chưa hoạt động</a>
                          <?php
                     }
                 ?>
             </td>
             <td> <?php echo $pdt['ctg_name'] ?></td>
-            <td>   <a href="edit_product.php?prostatus=edit&&id=<?php echo $pdt['pdt_id'] ?>">Edit</a> <br>
-             <a href="?prostatus=delete&&id=<?php echo $pdt['pdt_id'] ?>">Delete</a>  </td>
+            <td>   <a href="edit_product.php?prostatus=edit&&id=<?php echo $pdt['pdt_id'] ?>">sửa</a> <br>
+             <a href="?prostatus=delete&&id=<?php echo $pdt['pdt_id'] ?>">xóa</a>  </td>
 
         </tr>
         <?php }?>

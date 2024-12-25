@@ -15,17 +15,14 @@
    //  }
    // }
 ?>
-<h2>Add logo</h2> 
+<h2>Thêm Logo</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Logo ID</th>
-           
-         
+            <th>ID Logo</th>
             <th>Logo</th>
-         
-            <th>Action</th>
+            <th>Hành Động</th>
         </tr>
     </thead>
 
@@ -46,7 +43,7 @@
             <td>  <img style="height:60px" src="uploads/<?php echo $logo['img']; ?>" alt=""> </td>
             
            
-            <td>    <a href="edit_logo.php?status=edit&&id=<?php echo $logo['id']; ?>" class="btn btn-sm btn-warning">Edit</a></td>
+            <td>    <a href="edit_logo.php?status=edit&&id=<?php echo $logo['id']; ?>" class="btn btn-sm btn-warning">Sửa</a></td>
 
         </tr>
         <?php }?>

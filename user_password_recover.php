@@ -31,25 +31,21 @@ if (isset($_POST['u_pass_recover'])) {
         $rec_pass = $rec_result['user_password'];
 
         $to_email = $rec_email;
-        $subject = "Recover Password From Fruits Bazar";
-        $body = "Dear {$rec_name}".PHP_EOL. "Please visit this link to reset your password: http://localhost/projects/Fruits_bazar_ecommerce_project/user_password_update.php?status=update&&id={$rec_id}".PHP_EOL."Thank you";
+        $subject = "Khôi phục mật khẩu từ Fruits Bazar";
+        $body = "Kính gửi {$rec_name}".PHP_EOL. "Vui lòng truy cập vào liên kết này để đặt lại mật khẩu của bạn: http://localhost/projects/Fruits_bazar_ecommerce_project/user_password_update.php?status=update&&id={$rec_id}".PHP_EOL."Cảm ơn bạn";
         $headers = "From: graphicsapon@gmail.com";
 
         if (mail($to_email, $subject, $body, $headers)) {
-            $rec_msg= "Please check your email and reset password";
+            $rec_msg= "Vui lòng kiểm tra email của bạn để đặt lại mật khẩu";
         } else {
-            $rec_msg = "Email sending failed...";
+            $rec_msg = "Gửi email thất bại...";
         }
 
-
     } else {
-        $rec_msg = "Sorry !!! you have no account";
+        $rec_msg = "Xin lỗi, bạn không có tài khoản";
     }
 }
-
-
 ?>
-
 
 <?php
 include_once("includes/head.php");
@@ -57,7 +53,6 @@ include_once("includes/head.php");
 
 <body class="biolife-body">
     <!-- Preloader -->
-
 
     <!-- HEADER -->
     <header id="header" class="header-area style-01 layout-03">
@@ -76,15 +71,14 @@ include_once("includes/head.php");
 
     </header>
 
-    <!-- Page Contain -->
+    <!-- Nội dung trang -->
     <div class="page-contain">
 
-        <!-- Main content -->
+        <!-- Nội dung chính -->
         <div id="main-content" class="main-content">
 
-
             <div class="container">
-                <h2 class="text-center">Password Recovery</h2>
+                <h2 class="text-center">Khôi phục mật khẩu</h2>
 
                 <h4 class="text-danger"> <?php
                                             if (isset($rec_msg )) {
@@ -93,11 +87,7 @@ include_once("includes/head.php");
                                             ?></h4>
                 <div class="row">
 
-
-
-
-
-                    <!--Form Sign In-->
+                    <!-- Form đăng nhập -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="signin-container">
                             <form action="" name="frm-login" method="post">
@@ -107,65 +97,27 @@ include_once("includes/head.php");
                                 </p>
 
                                 <p class="wrap-btn">
-                                    <input type="submit" value="Recover Password" name="u_pass_recover" class="btn btn-success">
+                                    <input type="submit" value="Khôi phục mật khẩu" name="u_pass_recover" class="btn btn-success">
 
                                 </p>
                             </form>
                         </div>
                     </div>
 
-                    <!--Go to Register form-->
+                    <!-- Chuyển đến form đăng ký -->
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="register-in-container">
                             <div class="intro">
-                                <h4 class="box-title">New Customer?</h4>
-                                <p class="sub-title">Create an account with us and you’ll be able to:</p>
+                                <h4 class="box-title">Khách hàng mới?</h4>
+                                <p class="sub-title">Tạo tài khoản với chúng tôi và bạn sẽ có thể:</p>
                                 <ul class="lis">
-                                    <li>Check out faster</li>
-                                    <li>Save multiple shipping anddesses</li>
-                                    <li>Access your order history</li>
-                                    <li>Track new orders</li>
-                                    <li>Save items to your Wishlist</li>
+                                    <li>Mua sắm nhanh hơn</li>
+                                    <li>Lưu nhiều địa chỉ giao hàng</li>
+                                    <li>Truy cập lịch sử đơn hàng của bạn</li>
+                                    <li>Theo dõi các đơn hàng mới</li>
+                                    <li>Lưu các sản phẩm vào danh sách yêu thích</li>
                                 </ul>
-                                <a href="user_register.php" class="btn btn-bold">Create an account</a>
+                                <a href="user_register.php" class="btn btn-bold">Tạo tài khoản</a>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-
-
-
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-
-    <?php
-    include_once("includes/footer.php");
-    ?>
-
-    <!--Footer For Mobile-->
-    <?php
-    include_once("includes/mobile_footer.php");
-    ?>
-
-    <?php
-    include_once("includes/mobile_global.php")
-    ?>
-
-
-    <!-- Scroll Top Button -->
-    <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
-
-    <?php
-    include_once("includes/script.php")
-    ?>
-</body>
-
-</html>
+              

@@ -15,7 +15,7 @@
 
 
 ?>
-<h2>Manage Customer Feedback</h2>
+<h2>Quản Lý Phản Hồi Của Khách Hàng.</h2>
 
 
 <h5 class="text-danger">
@@ -29,13 +29,14 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>Fd Id</th>
-            <th>User Id</th>
-            <th>User Name</th>
-            <th>Product Id</th>
-            <th>User Comment</th>
-            <th>Comment Date</th>
-            <th>Action</th>
+        <th>Mã Fd</th>
+        <th>Mã Người Dùng</th>
+        <th>Tên Người Dùng</th>
+        <th>Mã Sản Phẩm</th>
+        <th>Bình Luận Của Người Dùng</th>
+        <th>Ngày Bình Luận</th>
+        <th>Hành Động</th>
+
         </tr>
     </thead>
 
@@ -69,8 +70,8 @@
             </td>
 
             <td>
-                <a href="edit_comment.php?status=editcomment&&id= <?php echo $cmt_row['id']?>" class="btn btn-sm btn-warning">Edit</a>
-                <a href="?status=deletecomment&&id= <?php echo $cmt_row['id']?>" class="btn btn-sm btn-danger">Delete</a>
+                <a href="edit_comment.php?status=editcomment&&id= <?php echo $cmt_row['id']?>" class="btn btn-sm btn-warning">Sửa</a>
+                <a href="?status=deletecomment&&id= <?php echo $cmt_row['id']?>" class="btn btn-sm btn-danger">xóa</a>
             </td>
 
 

@@ -89,7 +89,7 @@ include_once("includes/head.php");
             <div class="container">
                 <nav class="biolife-nav">
                     <ul>
-                        <li class="nav-item"><a href="index.php" class="permal-link">Home</a></li>
+                        <li class="nav-item"><a href="index.php" class="permal-link">Trang chủ</a></li>
 
                         <li class="nav-item"><span class="current-page">
 
@@ -145,29 +145,28 @@ include_once("includes/head.php");
                                                 <h3 class="title"><?php echo $pro_data['pdt_name'] ?></h3>
                                                 <div class="rating">
                                                     <p class="star-rating"><span class="width-80percent"></span></p>
-                                                    <span class="review-count">(04 Reviews)</span>
-                                                    <span class="qa-text">Q&A</span>
-                                                    <b class="category">By: <?php echo $pro_data['ctg_name'] ?></b>
+                                                    <span class="review-count">(04 Đánh giá)</span>
+                                                    <span class="qa-text">Câu hỏi & Trả lời</span>
+                                                    <b class="category">Bởi: <?php echo $pro_data['ctg_name'] ?></b>
                                                 </div>
-                                                <span class="sku">Sku: <?php echo $pro_data['pdt_id'] ?></span>
-                                                <span class="stock" style="margin-left: 200px;">Stock: <?php echo $pro_data['product_stock'] ?> </span>
-
+                                                <span class="sku">Mã sản phẩm: <?php echo $pro_data['pdt_id'] ?></span>
+                                                <span class="stock" style="margin-left: 200px;">Tình trạng hàng: <?php echo $pro_data['product_stock'] ?> </span>
 
                                                 <p class="excerpt"><?php echo $pro_data['pdt_des'] ?></p>
                                                 <div class="price">
                                                     <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $pro_data['pdt_price'] ?></span></ins>
-
                                                 </div>
 
                                                 <div class="shipping-info">
-                                                    <p class="shipping-day">3-Day Shipping</p>
-                                                    <p class="for-today">Pree Pickup Today</p>
+                                                    <p class="shipping-day">Giao hàng trong 3 ngày</p>
+                                                    <p class="for-today">Nhận hàng hôm nay</p>
                                                 </div>
                                             </div>
+
                                             <div class="action-form">
 
                                                 <div class="total-price-contain">
-                                                    <span class="title">Total Price:</span>
+                                                    <span class="title">Tổng tiền:</span>
                                                     <p class="price">Tk.
                                                         <?php
 
@@ -216,70 +215,73 @@ include_once("includes/head.php");
                         <!-- Tab info -->
                         <div class="product-tabs single-layout biolife-tab-contain">
                             <div class="tab-head">
-                                <ul class="tabs">
-                                    <li class="tab-element active"><a href="#tab_1st" class="tab-link">Products Descriptions</a></li>
+                            <ul class="tabs">
+                                <li class="tab-element active"><a href="#tab_1st" class="tab-link">Mô tả sản phẩm</a></li>
+                                <li class="tab-element"><a href="#tab_3rd" class="tab-link">Vận chuyển & Giao hàng</a></li>
+                                <li class="tab-element"><a href="#tab_4th" class="tab-link">Đánh giá của khách hàng <sup>(3)</sup></a></li>
+                            </ul>
 
-                                    <li class="tab-element"><a href="#tab_3rd" class="tab-link">Shipping & Delivery</a></li>
-                                    <li class="tab-element"><a href="#tab_4th" class="tab-link">Customer Reviews <sup>(3)</sup></a></li>
-                                </ul>
                             </div>
                             <div class="tab-content">
-                                <div id="tab_1st" class="tab-contain desc-tab active">
+                            <div id="tab_1st" class="tab-contain desc-tab active">
                                     <p class="desc">Quisque quis ipsum venenatis, fermentum ante volutpat, ornare enim. Phasellus molestie risus non aliquet cursus. Integer vestibulum mi lorem, id hendrerit ante lobortis non. Nunc ante ante, lobortis non pretium non, vulputate vel nisi. Maecenas dolor elit, fringilla nec turpis ac, auctor vulputate nulla. Phasellus sed laoreet velit.
                                         Proin fringilla urna vel mattis euismod. Etiam sodales, massa non tincidunt iaculis, mauris libero scelerisque justo, ut rutrum lectus urna sit amet quam. Nulla maximus vestibulum mi vitae accumsan. Donec sit amet ligula et enim semper viverra a in arcu. Vestibulum enim ligula, varius sed enim vitae, posuere molestie velit. Morbi risus orci, congue in nulla at, sodales fermentum magna.</p>
                                     <div class="desc-expand">
-                                        <span class="title">Organic Fresh Fruit</span>
+                                        <span class="title">Trái cây tươi hữu cơ</span>
                                         <ul class="list">
-                                            <li>100% real fruit ingredients</li>
-                                            <li>100 fresh fruit bags individually wrapped</li>
-                                            <li>Blending Eastern & Western traditions, naturally</li>
+                                            <li>100% thành phần trái cây thật</li>
+                                            <li>100 túi trái cây tươi được bọc riêng từng túi</li>
+                                            <li>Kết hợp truyền thống Đông và Tây một cách tự nhiên</li>
                                         </ul>
                                     </div>
                                 </div>
 
+
                                 <div id="tab_3rd" class="tab-contain shipping-delivery-tab">
                                     <div class="accodition-tab biolife-accodition">
                                         <ul class="tabs">
-                                            <li class="tab-item">
-                                                <span class="title btn-expand">How long will it take to receive my order?</span>
+                                        <li class="tab-item">
+                                                <span class="title btn-expand">Mất bao lâu để nhận đơn hàng của tôi?</span>
                                                 <div class="content">
-                                                    <p>Orders placed before 3pm eastern time will normally be processed and shipped by the following business day. For orders received after 3pm, they will generally be processed and shipped on the second business day. For example if you place your order after 3pm on Monday the order will ship on Wednesday. Business days do not include Saturday and Sunday and all Holidays. Please allow additional processing time if you order is placed on a weekend or holiday. Once an order is processed, speed of delivery will be determined as follows based on the shipping mode selected:</p>
+                                                    <p>Các đơn hàng đặt trước 3 giờ chiều theo giờ miền Đông sẽ được xử lý và vận chuyển vào ngày làm việc tiếp theo. Đối với các đơn hàng nhận sau 3 giờ chiều, chúng thường được xử lý và vận chuyển vào ngày làm việc thứ hai. Ví dụ, nếu bạn đặt hàng sau 3 giờ chiều vào thứ Hai, đơn hàng sẽ được gửi vào thứ Tư. Các ngày làm việc không bao gồm thứ Bảy, Chủ Nhật và các ngày lễ. Vui lòng chờ thêm thời gian xử lý nếu đơn hàng của bạn được đặt vào cuối tuần hoặc ngày lễ. Khi đơn hàng được xử lý, tốc độ giao hàng sẽ được xác định như sau dựa trên phương thức vận chuyển đã chọn:</p>
                                                     <div class="desc-expand">
-                                                        <span class="title">Shipping mode</span>
+                                                        <span class="title">Phương thức vận chuyển</span>
                                                         <ul class="list">
-                                                            <li>Standard (in transit 3-5 business days)</li>
-                                                            <li>Priority (in transit 2-3 business days)</li>
-                                                            <li>Express (in transit 1-2 business days)</li>
-                                                            <li>Gift Card Orders are shipped via USPS First Class Mail. First Class mail will be delivered within 8 business days</li>
+                                                            <li>Tiêu chuẩn (vận chuyển trong 3-5 ngày làm việc)</li>
+                                                            <li>Ưu tiên (vận chuyển trong 2-3 ngày làm việc)</li>
+                                                            <li>Chuyển phát nhanh (vận chuyển trong 1-2 ngày làm việc)</li>
+                                                            <li>Đơn hàng thẻ quà tặng được vận chuyển qua Bưu điện USPS First Class. Thư First Class sẽ được giao trong vòng 8 ngày làm việc</li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </li>
+
                                             <li class="tab-item">
-                                                <span class="title btn-expand">How is the shipping cost calculated?</span>
+                                                <span class="title btn-expand">Phí vận chuyển được tính như thế nào?</span>
                                                 <div class="content">
-                                                    <p>You will pay a shipping rate based on the weight and size of the order. Large or heavy items may include an oversized handling fee. Total shipping fees are shown in your shopping cart. Please refer to the following shipping table:</p>
-                                                    <p>Note: Shipping weight calculated in cart may differ from weights listed on product pages due to size and actual weight of the item.</p>
+                                                    <p>Bạn sẽ phải trả phí vận chuyển dựa trên trọng lượng và kích thước của đơn hàng. Những mặt hàng lớn hoặc nặng có thể bao gồm phí xử lý quá khổ. Tổng phí vận chuyển sẽ được hiển thị trong giỏ hàng của bạn. Vui lòng tham khảo bảng vận chuyển dưới đây:</p>
+                                                    <p>Lưu ý: Trọng lượng vận chuyển tính trong giỏ hàng có thể khác với trọng lượng trên trang sản phẩm do kích thước và trọng lượng thực tế của mặt hàng.</p>
                                                 </div>
                                             </li>
                                             <li class="tab-item">
-                                                <span class="title btn-expand">Why Didn’t My Order Qualify for FREE shipping?</span>
+                                                <span class="title btn-expand">Tại sao đơn hàng của tôi không đủ điều kiện miễn phí vận chuyển?</span>
                                                 <div class="content">
-                                                    <p>We do not deliver to P.O. boxes or military (APO, FPO, PSC) boxes. We deliver to all 50 states plus Puerto Rico. Certain items may be excluded for delivery to Puerto Rico. This will be indicated on the product page.</p>
+                                                    <p>Chúng tôi không giao hàng đến hộp thư P.O. hoặc hộp thư quân đội (APO, FPO, PSC). Chúng tôi giao hàng đến tất cả 50 tiểu bang và Puerto Rico. Một số mặt hàng có thể bị loại trừ khỏi việc giao hàng đến Puerto Rico. Điều này sẽ được chỉ ra trên trang sản phẩm.</p>
                                                 </div>
                                             </li>
                                             <li class="tab-item">
-                                                <span class="title btn-expand">Shipping Restrictions?</span>
+                                                <span class="title btn-expand">Hạn chế vận chuyển?</span>
                                                 <div class="content">
-                                                    <p>We do not deliver to P.O. boxes or military (APO, FPO, PSC) boxes. We deliver to all 50 states plus Puerto Rico. Certain items may be excluded for delivery to Puerto Rico. This will be indicated on the product page.</p>
+                                                    <p>Chúng tôi không giao hàng đến hộp thư P.O. hoặc hộp thư quân đội (APO, FPO, PSC). Chúng tôi giao hàng đến tất cả 50 tiểu bang và Puerto Rico. Một số mặt hàng có thể bị loại trừ khỏi việc giao hàng đến Puerto Rico. Điều này sẽ được chỉ ra trên trang sản phẩm.</p>
                                                 </div>
                                             </li>
                                             <li class="tab-item">
-                                                <span class="title btn-expand">Undeliverable Packages?</span>
+                                                <span class="title btn-expand">Gói hàng không thể giao?</span>
                                                 <div class="content">
-                                                    <p>Occasionally packages are returned to us as undeliverable by the carrier. When the carrier returns an undeliverable package to us, we will cancel the order and refund the purchase price less the shipping charges. Here are a few reasons packages may be returned to us as undeliverable:</p>
+                                                    <p>Thỉnh thoảng, gói hàng bị trả lại cho chúng tôi do không thể giao được bởi đơn vị vận chuyển. Khi đơn vị vận chuyển trả lại gói hàng không thể giao, chúng tôi sẽ hủy đơn hàng và hoàn tiền giá trị mua hàng, trừ đi phí vận chuyển. Dưới đây là một số lý do gói hàng có thể bị trả lại như không thể giao được:</p>
                                                 </div>
                                             </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -288,15 +290,17 @@ include_once("includes/head.php");
                                         <div class="row">
                                             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                                 <div class="rating-info">
-                                                    <p class="index"><strong class="rating">4.4</strong>out of 5</p>
+                                                <p class="index"><strong class="rating">4.4</strong> trên 5</p>
+
                                                     <div class="rating">
                                                         <p class="star-rating"><span class="width-80percent"></span></p>
                                                     </div>
-                                                    <p class="see-all">See all <?php echo $cmt_row?> reviews</p>
+                                                    <p class="see-all">Xem tất cả <?php echo $cmt_row?> đánh giá</p>
+
                                                     <ul class="options">
                                                         <li>
                                                             <div class="detail-for">
-                                                                <span class="option-name">5stars</span>
+                                                                <span class="option-name">5 sao</span>
                                                                 <span class="progres">
                                                                     <span class="line-100percent"><span class="percent width-90percent"></span></span>
                                                                 </span>
@@ -305,7 +309,7 @@ include_once("includes/head.php");
                                                         </li>
                                                         <li>
                                                             <div class="detail-for">
-                                                                <span class="option-name">4stars</span>
+                                                                <span class="option-name">4 sao</span>
                                                                 <span class="progres">
                                                                     <span class="line-100percent"><span class="percent width-30percent"></span></span>
                                                                 </span>
@@ -314,7 +318,7 @@ include_once("includes/head.php");
                                                         </li>
                                                         <li>
                                                             <div class="detail-for">
-                                                                <span class="option-name">3stars</span>
+                                                                <span class="option-name">3 sao</span>
                                                                 <span class="progres">
                                                                     <span class="line-100percent"><span class="percent width-40percent"></span></span>
                                                                 </span>
@@ -323,7 +327,7 @@ include_once("includes/head.php");
                                                         </li>
                                                         <li>
                                                             <div class="detail-for">
-                                                                <span class="option-name">2stars</span>
+                                                                <span class="option-name">2 sao</span>
                                                                 <span class="progres">
                                                                     <span class="line-100percent"><span class="percent width-20percent"></span></span>
                                                                 </span>
@@ -347,7 +351,8 @@ include_once("includes/head.php");
                                                 if (isset($_SESSION['user_id'])) {
                                                 ?>
                                                     <div class="review-form-wrapper">
-                                                        <span class="title">Submit your review</span>
+                                                    <span class="title">Gửi đánh giá của bạn</span>
+
                                                         <form action="#" name="frm-review" method="post">
                                                             <div class="comment-form-rating">
 
@@ -356,7 +361,7 @@ include_once("includes/head.php");
                                                                     echo '<script>alert("Thanks for your valuable feedback")</script>';
                                                                 }
                                                             ?>
-                                                                <label>1. Your Comment about this products:</label>
+                                                                <label>1. Nhận xét của bạn về sản phẩm này:</label>
                                                             </div>
                                                             <p class="form-row">
                                                                 <input type="hidden" value="<?php echo $_SESSION['user_id'] ?>" name="user_id">
@@ -404,17 +409,18 @@ include_once("includes/head.php");
                                                             <span class="post-date"><?php echo $cmtinfo['comment_date'] ?></span></p>
                                                               
                                                                 
-                                                                <p class="author">by: <b><?php echo $cmtinfo['user_name'] ?></b></p>
+                                                                <p class="author">Bởi : <b><?php echo $cmtinfo['user_name'] ?></b></p>
 
                                                                 <p class="comment-text"><?php echo $cmtinfo['comment'] ?>.</p>
 
                                                             </div>
                                                             <div class="comment-review-form col-lg-3 col-lg-offset-1 col-md-3 col-sm-4 col-xs-12">
-                                                                <span class="title">Was this review helpful?</span>
+                                                            <span class="title">Đánh giá này có hữu ích không?</span>
                                                                 <ul class="actions">
-                                                                    <li><a href="#" class="btn-act like" data-type="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Yes (100)</a></li>
-                                                                    <li><a href="#" class="btn-act hate" data-type="dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i>No (20)</a></li>
-                                                                    <li><a href="#" class="btn-act report" data-type="dislike"><i class="fa fa-flag" aria-hidden="true"></i>Report</a></li>
+                                                                <li><a href="#" class="btn-act like" data-type="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Có (100)</a></li>
+                                                                <li><a href="#" class="btn-act hate" data-type="dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i>Không (20)</a></li>
+                                                                <li><a href="#" class="btn-act report" data-type="dislike"><i class="fa fa-flag" aria-hidden="true"></i>Báo cáo</a></li>
+
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -436,8 +442,9 @@ include_once("includes/head.php");
                                                     <li><a href="#" class="link-page next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                                                 </ul>
                                                 <div class="result-count">
-                                                    <p class="txt-count"><b>1-5</b> of <b>126</b> reviews</p>
-                                                    <a href="#" class="link-to">See all<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                                    <p class="txt-count"><b>1-5</b> trong số <b>126</b> đánh giá</p>
+                                                    <a href="#" class="link-to">Xem tất cả<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -450,8 +457,9 @@ include_once("includes/head.php");
                         <div class="product-related-box single-layout">
                             <div class="biolife-title-box lg-margin-bottom-26px-im">
                                 <span class="biolife-icon icon-organic"></span>
-                                <span class="subtitle">All the best item for You</span>
-                                <h3 class="main-title">Related Products</h3>
+                                <span class="subtitle">Tất cả những sản phẩm tốt nhất cho bạn</span>
+                                <h3 class="main-title">Sản phẩm liên quan</h3>
+
                             </div>
                             <ul class="products-list biolife-carousel nav-center-02 nav-none-on-mobile" data-slick='{"rows":1,"arrows":true,"dots":false,"infinite":false,"speed":400,"slidesMargin":0,"slidesToShow":5, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 4}},{"breakpoint":992, "settings":{ "slidesToShow": 3, "slidesMargin":20 }},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin":10}}]}'>
                                 <?php while ($r_pro = mysqli_fetch_assoc($rel_pro)) { ?>
@@ -473,7 +481,8 @@ include_once("includes/head.php");
 
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">Tất cả sản phẩm đều được lựa chọn cẩn thận để đảm bảo an toàn thực phẩm.</p>
+
 
                                                 </div>
                                             </div>

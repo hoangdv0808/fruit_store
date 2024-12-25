@@ -28,8 +28,8 @@
                 <th>Tweeter</th>
                 <th>Facebook</th>
                 <th>Pinterest</th>
-                <th>Phone</th>
-                <th>Action</th>
+                <th>SĐT</th>
+                <th>Hành động</th>
             </tr>
         </thead>
 

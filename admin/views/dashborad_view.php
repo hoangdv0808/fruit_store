@@ -10,17 +10,18 @@
         overflow: hidden;
     }
 </style>
-<h2>Dashborad </h2>
+<h2>Bảng Điều Khiển </h2>
 
 
 <div class="mydiv">
 <form action="" class="form">
     <select name="filterDate" id="filterDate" class="form-control">
-        <option value="<?php echo date("Y/m/d")?>" >Today</option>
-        <option value="<?php echo date('Y-m-d', strtotime('-7 days')) ?>" >This week</option>
-        <option value="<?php echo date('Y-m-d', strtotime('-30 days')) ?>" >This Month</option>
-        <option value="<?php echo date('Y-m-d', strtotime('-365 days')) ?>" >This Year</option>
-        <option value="2020-01-01" >Life Time</option>
+        <option value="<?php echo date("Y/m/d")?>" >Hôm nay</option>
+        <option value="<?php echo date('Y-m-d', strtotime('-7 days')) ?>" >Tuần này</option>
+        <option value="<?php echo date('Y-m-d', strtotime('-30 days')) ?>" >Tháng này</option>
+        <option value="<?php echo date('Y-m-d', strtotime('-365 days')) ?>" >Năm nay</option>
+
+        <option value="2020-01-01" >Tất cả</option>
     </select>
 </form>
 </div>
@@ -133,7 +134,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-blue order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Orders Received</h6>
+            <h6 class="m-b-20">Đơn Hàng Đã Nhận</h6>
             <h2 class="text-right"><i class="ti-shopping-cart f-left"></i><span id="totalOrder">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>
@@ -144,7 +145,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-green order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Total Sales</h6>
+            <h6 class="m-b-20">Tổng Doanh Thu.</h6>
             <h2 class="text-right"><i class="ti-tag f-left"></i><span id="totalSell">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>
@@ -153,7 +154,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-yellow order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Satisfied Customer</h6>
+            <h6 class="m-b-20">Khách Hàng Hài Lòng</h6>
             <h2 class="text-right"><i class="ti-reload f-left"></i><span id="totalCustomer">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>
@@ -162,7 +163,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-pink order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Delivered Order</h6>
+            <h6 class="m-b-20">Đơn Hàng Đã Giao.</h6>
             <h2 class="text-right"><i class="ti-wallet f-left"></i><span id="DeliverOrder">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>
@@ -172,7 +173,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-pink order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Processing Order</h6>
+            <h6 class="m-b-20">Đơn Hàng Đang Xử Lý.</h6>
             <h2 class="text-right"><i class="ti-wallet f-left"></i><span id="processingOrder">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>
@@ -182,7 +183,7 @@
 <div class="col-md-6 col-xl-3">
     <div class="card bg-c-yellow order-card">
         <div class="card-block">
-            <h6 class="m-b-20">Pending Order</h6>
+            <h6 class="m-b-20">Đơn Hàng Đang Chờ.</h6>
             <h2 class="text-right"><i class="ti-reload f-left"></i><span id="pendingOrder">0</span></h2>
             <p class="m-b-0"><span class="f-right"></span></p>
         </div>

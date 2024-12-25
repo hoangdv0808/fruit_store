@@ -25,7 +25,7 @@ while ($pdt_ftecth = mysqli_fetch_assoc($pdt_info)) {
                             </div>
                             <a href="single_product.php?status=singleproduct&&id=<?php echo $pdt_data['pdt_id'] ?>">
                                 <div class="text-content">
-                                    <b class="first-line">Special Items</b>
+                                    <b class="first-line">Sản phẩm đặc biệt</b>
                                     <span class="second-line"><?php echo $pdt_data['pdt_name'] ?></span>
 
                                     <div class="product-detail">
@@ -62,21 +62,21 @@ while ($pdt_ftecth = mysqli_fetch_assoc($pdt_info)) {
                     <div class="service-inner color-reverse">
                         <span class="number">1</span>
                         <span class="biolife-icon icon-beer"></span>
-                        <a class="srv-name" href="#">full stamped product</a>
+                        <a class="srv-name" href="#">Sản phẩm đã được đóng dấu đầy đủ</a>
                     </div>
                 </li>
                 <li>
                     <div class="service-inner color-reverse">
                         <span class="number">2</span>
                         <span class="biolife-icon icon-schedule"></span>
-                        <a class="srv-name" href="#">place and delivery on time</a>
+                        <a class="srv-name" href="#">Đặt hàng và giao hàng đúng thời gian</a>
                     </div>
                 </li>
                 <li>
                     <div class="service-inner color-reverse">
                         <span class="number">3</span>
                         <span class="biolife-icon icon-car"></span>
-                        <a class="srv-name" href="#">Free shipping in the city</a>
+                        <a class="srv-name" href="#">Miễn phí vận chuyển trong thành phố</a>
                     </div>
                 </li>
             </ul>

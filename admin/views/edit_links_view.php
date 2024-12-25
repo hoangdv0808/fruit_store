@@ -13,7 +13,7 @@
 ?>
 
 
-<h2>Update Links</h2>
+<h2>Cập Nhật Liên Kết.</h2>
 
 <h6 class="">
     <?php if(isset($up_msg)){ echo $up_msg;} ?>
@@ -41,7 +41,7 @@
         <input type="text" name="pin" class="form-control"  value="<?php echo $link['pinterest'] ?>">
     </div>
      <div class="form-group">
-        <label for="phone">Phone Number</label>
+        <label for="phone">SĐT</label>
         <input type="tel" name="phone" class="form-control"  value="<?php echo $link['phone'] ?>">
     </div>
 

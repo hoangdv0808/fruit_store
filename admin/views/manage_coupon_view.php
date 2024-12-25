@@ -4,16 +4,16 @@
     
 ?>
 
-<h2>Manage Coupon</h2>
+<h2>Quản lý mã giảm giá</h2>
 
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
-            <th>Coupon Id</th>
-            <th>Coupon Code</th>
-            <th>Coupon Description</th>
-            <th>Coupon Discount</th>
-            <th>Action</th>
+            <th>Mã Coupon</th>
+            <th>Mã Giảm Giá</th>
+            <th>Mô Tả Coupon</th>
+            <th>Giảm Giá Coupon</th>
+            <th>Hành Động</th>
         </tr>
     </thead>
 
@@ -26,7 +26,7 @@
             <td> <?php echo $result['cupon_code'] ?></td>
             <td> <?php echo $result['description'] ?></td>
             <td> <?php echo $result['discount'] ?></td>
-            <td><a href="">Edit</a>  <a href="">Delete</a>  </td>
+            <td><a href="">sửa</a>  <a href="">xóa</a>  </td>
            
         </tr>
 

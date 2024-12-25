@@ -6,7 +6,7 @@
     }
 ?>
 
-<h2>Add Coupon</h2>
+<h2>Thêm Mã Giảm Giá.</h2>
 
 <h4>
     <?php 
@@ -20,28 +20,29 @@
     <form action="" method="POST">
       
     <div class="form-group">
-        <label for="cuopon_code">Coupon Code</label>
-        <input type="text" name="cuopon_code" class="form-control" >
-    </div>
+    <label for="cuopon_code">Mã Giảm Giá</label>
+    <input type="text" name="cuopon_code" class="form-control" >
+</div>
 
-    <div class="form-group">
-        <label for="cuopon_description">Coupon Description</label>
-        <input type="text" name="cuopon_description" class="form-control" >
-    </div>
+<div class="form-group">
+    <label for="cuopon_description">Mô Tả Mã Giảm Giá</label>
+    <input type="text" name="cuopon_description" class="form-control" >
+</div>
 
-    <div class="form-group">
-        <label for="cuopon_discount">Coupon Discount</label>
-        <input type="number" name="cuopon_discount" class="form-control" >
-    </div>
+<div class="form-group">
+    <label for="cuopon_discount">Giảm Giá</label>
+    <input type="number" name="cuopon_discount" class="form-control" >
+</div>
 
-    <div class="form-group">
-        <label for="cuopon_status">Coupon Discount</label>
-        <select name="cuopon_status" class="form-control">
-            <option disabled>--Select--</option>
-            <option value="1">Active</option>
-            <option value="2">Deactive</option>
-        </select>
-    </div>
+<div class="form-group">
+    <label for="cuopon_status">Trạng Thái Mã Giảm Giá</label>
+    <select name="cuopon_status" class="form-control">
+        <option disabled>--Chọn--</option>
+        <option value="1">Kích Hoạt</option>
+        <option value="2">Vô Hiệu Hóa</option>
+    </select>
+</div>
+
 
     <div class="form-group">
        

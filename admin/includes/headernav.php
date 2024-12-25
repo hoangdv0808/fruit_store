@@ -59,16 +59,18 @@
                                </a>
                                <ul class="show-notification">
                                    <li>
-                                       <h6>Notifications</h6>
-                                       <label class="label label-danger">New</label>
+                                   <h6>Thông báo</h6>
+<label class="label label-danger">Mới</label>
+
                                    </li>
                                    <li>
                                        <div class="media">
                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                            <div class="media-body">
                                                <h5 class="notification-user">John Doe</h5>
-                                               <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                               <span class="notification-time">30 minutes ago</span>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 phút trước</span>
+
                                            </div>
                                        </div>
                                    </li>
@@ -76,9 +78,10 @@
                                        <div class="media">
                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                            <div class="media-body">
-                                               <h5 class="notification-user">Joseph William</h5>
-                                               <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                               <span class="notification-time">30 minutes ago</span>
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 phút trước</span>
+
                                            </div>
                                        </div>
                                    </li>
@@ -88,7 +91,7 @@
                                            <div class="media-body">
                                                <h5 class="notification-user">Sara Soudein</h5>
                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                               <span class="notification-time">30 minutes ago</span>
+                                               <span class="notification-time">30 phút trước</span>
                                            </div>
                                        </div>
                                    </li>
@@ -108,7 +111,7 @@
                                   
                                    <li>
                                        <a href="?adminLogout=logout">
-                                       <i class="ti-layout-sidebar-left"></i> Logout
+                                       <i class="ti-layout-sidebar-left"></i> Đăng xuất
                                    </a>
                                    </li>
                                </ul>

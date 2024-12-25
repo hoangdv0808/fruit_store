@@ -6,7 +6,7 @@
 ?>
 
 
-<h2>Add Catagory</h2>
+<h2>Thêm danh mục</h2>
 
 <h4 class="text-success"> <?php if(isset($rtnMsg)){ echo $rtnMsg; } ?> 
 
@@ -15,20 +15,20 @@
 
 
     <div class="form-group">
-        <label for="ctg_name">Catagory Name</label>
+        <label for="ctg_name">Tên</label>
         <input type="text" name="ctg_name" class="form-control">
     </div>
 
     <div class="form-group">
-        <label for="ctg_des">Catagory descriptioon</label>
+        <label for="ctg_des">mô tả</label>
         <input type="text" name="ctg_des" class="form-control">
     </div>
 
     <div class="form-group">
-        <label for="ctg_status">Catagory Name</label>
+        <label for="ctg_status">Trạng thái</label>
         <select name="ctg_status" class="form-control">
-            <option value="1">Published</option>
-            <option value="0">Unpublished</option>
+            <option value="1"> Hoạt động</option>
+            <option value="0">Không Hoạt động</option>
         </select>
     </div>
 

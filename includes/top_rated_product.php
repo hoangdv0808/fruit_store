@@ -5,7 +5,7 @@
 
 <div class="advance-product-box">
                                 <div class="biolife-title-box bold-style biolife-title-box__bold-style">
-                                    <h3 class="title">Top Rated Products</h3>
+                                    <h3 class="title">Sản phẩm được đánh giá cao nhất</h3>
                                 </div>
                                 <ul class="products biolife-carousel nav-center-03 nav-none-on-mobile row-space-29px" data-slick='{"rows":2,"arrows":true,"dots":false,"infinite":false,"speed":400,"slidesMargin":30,"slidesToShow":2,"responsive":[{"breakpoint":1200,"settings":{ "rows":2, "slidesToShow": 2}},{"breakpoint":992, "settings":{ "rows":2, "slidesToShow": 1}},{"breakpoint":768, "settings":{ "rows":2, "slidesToShow": 2}},{"breakpoint":500, "settings":{ "rows":2, "slidesToShow": 1}}]}'>
                                 
@@ -30,7 +30,7 @@
                                                 </div>
                                                 <div class="rating">
                                                     <p class="star-rating"><span class="width-80percent"></span></p>
-                                                    <span class="review-count">(05 Reviews)</span>
+                                                    <span class="review-count">(05 Đánh giá)</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,10 +42,11 @@
                                     <div class="banner-contain">
                                         <a href="#" class="bn-link"></a>
                                         <div class="text-content">
-                                            <span class="first-line">Daily Fresh</span>
-                                            <b class="second-line">Natural</b>
-                                            <i class="third-line">Fresh Food</i>
-                                            <span class="fourth-line">Premium Quality</span>
+                                        <span class="first-line">Tươi Mỗi Ngày</span>
+                                            <b class="second-line">Tự Nhiên</b>
+                                            <i class="third-line">Thực Phẩm Tươi</i>
+                                            <span class="fourth-line">Chất Lượng Cao</span>
+
                                         </div>
                                     </div>
                                 </div>

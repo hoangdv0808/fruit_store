@@ -4,28 +4,21 @@ session_start();
 include_once("admin/class/adminback.php");
 $obj = new adminback();
 
+// Lấy thông tin danh mục sản phẩm
 $cata_info = $obj->p_display_catagory();
 $cataDatas = array();
 while ($data = mysqli_fetch_assoc($cata_info)) {
     $cataDatas[] = $data;
 }
 
-
-
-
+// Lấy tất cả sản phẩm
 $pdt_info = $obj->view_all_product();
-
 $pdt_datas = array();
-        
 while($pdt_ftecth = mysqli_fetch_assoc($pdt_info)){
-            $pdt_datas[] = $pdt_ftecth;
+    $pdt_datas[] = $pdt_ftecth;
 }
 
-
-
-
 ?>
-
 
 <?php
 include_once("includes/head.php");
@@ -51,21 +44,19 @@ include_once("includes/head.php");
 
     </header>
 
-    <!-- Page Contain -->
+    <!-- Nội dung trang -->
     <div class="page-contain">
 
-        <!-- Main content -->
+        <!-- Nội dung chính -->
         <div id="main-content" class="main-content">
 
-            <!--Hero Section-->
+            <!-- Phần Hero -->
           
 
+            <!-- Phần điều hướng -->
+          
 
-            <!--Navigation section-->
-           
-
-
-            <!-- Product -->
+            <!-- Sản phẩm -->
             <div class="container">
 
                 <div class="product-category grid-style">
@@ -87,18 +78,17 @@ include_once("includes/head.php");
                                         <div class="info">
                                         <b class="categories"> <?php echo $pdt_data['ctg_name'] ?> </b>
                                             
+
                                             <h4 class="product-title"><a href="single_product.php?status=singleproduct&&id=<?php echo $pdt_data['pdt_id'] ?>" class="pr-name"><?php echo $pdt_data['pdt_name'] ?></a></h4>
                                             <div class="price">
                                                 <ins><span class="price-amount"><span class="currencySymbol">Tk. </span><?php echo $pdt_data['pdt_price'] ?></span></ins>
-
                                             </div>
                                             <div class="shipping-info">
-                                                <p class="shipping-day">3-Day Shipping</p>
-                                                <p class="for-today">Pree Pickup Today</p>
+                                                <p class="shipping-day">Giao hàng trong 3 ngày</p>
+                                                <p class="for-today">Nhận hàng trong ngày</p>
                                             </div>
                                             <div class="slide-down-box">
-                                                <p class="message">All products are carefully selected to ensure food safety.</p>
-                                               
+                                                <p class="message">Tất cả sản phẩm đều được chọn lọc cẩn thận để đảm bảo an toàn thực phẩm.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -106,11 +96,10 @@ include_once("includes/head.php");
 
                             <?php } ?>
 
-
                         </ul>
                     </div>
 
-                    <!-- Pagination block -->
+                    <!-- Phần phân trang -->
 
                     <div class="biolife-panigations-block">
                         <ul class="panigation-contain">
@@ -125,10 +114,6 @@ include_once("includes/head.php");
 
                 </div>
 
-
-
-
-
             </div>
         </div>
     </div>
@@ -139,21 +124,21 @@ include_once("includes/head.php");
     include_once("includes/footer.php");
     ?>
 
-    <!--Footer For Mobile-->
+    <!-- Footer cho di động -->
     <?php
     include_once("includes/mobile_footer.php");
     ?>
 
     <?php
-    include_once("includes/mobile_global.php")
+    include_once("includes/mobile_global.php");
     ?>
 
 
-    <!-- Scroll Top Button -->
+    <!-- Nút cuộn lên đầu trang -->
     <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
 
     <?php
-    include_once("includes/script.php")
+    include_once("includes/script.php");
     ?>
 </body>
 

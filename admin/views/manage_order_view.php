@@ -1,4 +1,4 @@
-<h2>Manage order</h2>
+<h2>Quản lý đơn hàng</h2>
 
 <?php
 
@@ -25,18 +25,18 @@ if(isset( $status_msg)){
     <table class="table table-striped">
         <thead>
             <tr>
-                <th class="product-name">Order Id</th>
-                <th class="product-price">Products</th>
-                <th class="product-quantity">Quantity</th>
-                <th class="product-subtotal">Amount</th>
-                <th class="product-subtotal">Uses Coupon</th>
-                <th class="product-subtotal">Customer Name</th>
-                <th class="product-subtotal">Customer Mobile</th>
-                <th class="product-subtotal">Trans No</th>
-                <th class="product-subtotal">Shiping</th>
-                <th class="product-subtotal">Order Status</th>
-                <th class="product-subtotal">Update Status</th>
-                <th class="product-subtotal">Placing Time</th>
+                <th class="product-name">Mã Đơn Hàng</th>
+                <th class="product-price">Sản Phẩm</th>
+                <th class="product-quantity">Số Lượng</th>
+                <th class="product-subtotal">Số Tiền</th>
+                <th class="product-subtotal">Sử Dụng Mã Giảm Giá</th>
+                <th class="product-subtotal">Tên Khách Hàng</th>
+                <th class="product-subtotal">Số Điện Thoại Khách Hàng</th>
+                <th class="product-subtotal">Mã Giao Dịch</th>
+                <th class="product-subtotal">Vận Chuyển</th>
+                <th class="product-subtotal">Trạng Thái Đơn Hàng</th>
+                <th class="product-subtotal">Cập Nhật Trạng Thái</th>
+                <th class="product-subtotal">Thời Gian Đặt Hàng</th>
             </tr>
         </thead>
 
@@ -70,10 +70,11 @@ if(isset( $status_msg)){
                 <td class="product-subtotal">
                     <form action="manage_order.php" method="POST">
                         <select name="update_status">
-                        <option>Select</option>
-                            <option value="0">Pending</option>
-                            <option value="1">Processing</option>
-                            <option value="2">Deliverd</option>
+                        <option>Chọn</option>
+                            <option value="0">Đang chờ</option>
+                            <option value="1">Đang xử lý</option>
+                            <option value="2">Đã giao</option>
+
                         </select> <br>
                         <input type="hidden" name="order_id" value="<?php echo $order_info['order_id']  ?>">
                         <input type="submit" value="update" name="update_status_btn">
